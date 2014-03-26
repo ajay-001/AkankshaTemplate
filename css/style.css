@@ -1,0 +1,457 @@
+/* CSS Document */
+body{
+	margin:0;
+	padding:0;	
+	font-family:Arial;
+}
+.horiz_strip{
+	width:100%;	
+}
+.horiz_strip_content{
+	width:960px;
+	margin:0 auto;	
+}
+#pink_top{
+	height:2em;
+	top:0;
+	background-color:#f495b7;
+	position:fixed;	
+	z-index:1000;
+}
+#nav{
+	background-color:#4a4848;
+	height:2.5em;	
+	text-align:right;
+	margin-top:-1em;
+	position:fixed;
+	top:3em;
+	z-index:1000;
+	
+	/* box-shadow top */
+	-webkit-box-shadow: 0px 0px 10px rgba(255,255,255,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(255,255,255,.8);
+                         box-shadow: 0px 0px 10px rgba(255,255,255,.8);
+}
+#nav ul{
+	padding:0;
+	margin:0;	
+}
+#nav .horiz_strip_content{
+	color:white;
+}
+#nav .horiz_strip_content ul li{
+	display:inline-block;
+	list-style:none;
+	margin-left:1em;	
+	color:white;
+	margin-top:.7em;
+	
+	/* css3 transition */
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+	transition: color 1s;
+}
+
+#nav .horiz_strip_content ul li:hover{
+	color:#11a9d4;	
+}
+#nav .horiz_strip_content ul li.selected{
+	color:#11a9d4;	
+}
+#main_content{
+	background-color:#e7e8e9;
+	margin-top:4em;	
+	padding-top:1em;
+	color:#6c6c6c;
+	text-align:justify;
+}
+#main_content .horiz_strip_content{
+	background-image:url(../img/blue_flowers.png);
+	background-position:100% 115%;;
+	background-repeat:no-repeat;
+	padding-bottom:8em;	
+}
+#main_content_text{
+	width:500px;
+	display:inline-block;	
+}
+.slideshow{
+	display:inline-block;
+	max-width:400px !important;	
+	margin-left:50px;
+	bottom:0px;
+}
+.slideshow img{
+	max-width:500px !important;	
+}
+#footer{
+	background-color:#fd4185;
+	color:white;	
+}
+#footer .horiz_strip_content{
+	padding:1em;
+	background-image:url(../img/white_flowers.png);
+	background-repeat:no-repeat;
+	background-position:0% 100%;
+	padding-bottom:2.5em;	
+}
+#footer ul li{
+	list-style:none;
+	margin-left:-2em;	
+}
+.vertical_footer_row{
+	width:19%;
+	display:inline-block;
+	vertical-align:top;
+}
+#footer span{
+	float:right;
+	margin-top:1em;
+}
+span.pink{
+	color:#fd4085;	
+}
+#footer a{
+	color:white;
+	text-decoration:none;	
+}
+#footer a:hover{
+	text-decoration:underline;	
+}
+#footer #copyright{
+	float:right;
+	text-align:right;	
+}
+#footer #copyright img{
+	vertical-align:middle;
+	margin-left:20px;	
+}
+#footer span.space_top{
+	margin-top:5px;	
+}
+
+/* page sections */
+.section{
+	margin-bottom:2em;	
+}
+#fertility_main_content .section, #other_main_content .section{
+	overflow-y:auto;
+}
+.section img{
+	display:inline-block;
+	width:35%;	
+	margin:2%;
+	vertical-align:top;
+}
+.section .section_text{
+	display:inline-block;
+	width:60%;	
+	line-height:1.3em;
+	font-weight:500;
+	margin-top:.5em;
+}
+.light_pink{
+	color:#f77aa3;	
+}
+h2.light_pink{
+	font-size:2em;	
+	margin-bottom:0;
+	/*margin-top:1em;*/
+	padding-top:2.7em;
+	margin-top:-2.7em;
+}
+.right{
+	text-align:right;	
+}
+.subheading{
+	margin-bottom:1em;
+	position:relative;
+	top:-.5em;	
+	font-weight:500;
+	margin-right:2.5%;
+}
+.subheading li{
+	list-style:none;	
+}
+.left{
+	text-align:left;	
+}
+.left_title{
+	margin-left:1%;	
+}
+.right_title{
+	margin-right:2.5%;	
+}
+.right_image{
+	float:right;	
+}
+img.full_width{
+	width:80%;
+	display:block;
+	margin:0 auto;	
+}
+#about_main_content, #fertility_main_content, #other_main_content, #kc_main_content, #contact_content{
+	background-color:#e7e8e9;
+	margin-top:3em;	
+	padding-top:2em;
+	color:#6c6c6c;
+	text-align:justify;	
+}
+#about_main_content .horiz_strip_content, #fertility_main_content .horiz_strip_content, #other_main_content .horiz_strip_content, #kc_main_content .horiz_strip_content, #contact_content .horiz_strip_content{
+	background-image:url(../img/blue_flowers.png);
+	background-position:100% 104%;
+	background-repeat:no-repeat;
+	padding-bottom:8em;	
+}
+/* About Section */
+#baby_hands{
+	width:35%;	
+}
+#baby_hands_content{
+	width:60%;
+}
+#services{
+	margin-right:0;	
+}
+.blue_title{
+	color:#0ca7d4;	
+}
+#microscope{
+	margin-right:0;
+	position:relative;
+	left:1.5em;	
+}
+
+/* Fertility Information */
+h3.light_pink{
+	font-size:1.4em;	
+	padding-top:0em;
+}
+h3.left_title_no_margin{
+	margin-left:0;	
+}
+h3.right_title_no_margin{
+	text-align:right;
+	margin-right:0;	
+}
+#fertility_main_content .horiz_strip_content{
+	background-position:100% 114%;
+}
+
+/* Other Services */
+#other_main_content .horiz_strip_content{
+	background-position:100% 114%;
+}
+table{
+	border:1px solid black;	
+	border-collapse: collapse;
+}
+td{
+	border:1px solid black;
+	text-align:center;	
+}
+
+/* KC Raju Hospital*/
+h1.inline_header{
+	display:inline-block;	
+	font-size:2.3em;
+}
+h1#kc_raju_header{
+	font-size:3.4em;
+	display:inline-block;		
+}
+#kc_logo{
+	margin-top:1em;
+	margin-right:2em;
+	vertical-align:-4em;	
+}
+div.center{
+	text-align:center;	
+}
+.left-aligned{
+	text-align:left;	
+}
+div.third{
+	width:27%;
+	padding:1%;
+	display:inline-block;	
+	vertical-align:top;
+}
+div.less_than_third{
+	width:35%;
+	display:inline-block;
+	margin-left:5%;	
+	vertical-align:middle;
+	padding-top:4em;
+}
+#kc_main_content div.less_than_third img{
+	width:100%;	
+}
+.subheading_left{
+	text-align:left;
+	font-weight:500;
+	margin-left:-3%;	
+}
+.subheading_right{
+	text-align:right;
+	font-weight:500;
+	margin-left:-3%;	
+}
+.subheading_left li, .subheading_right li{
+	list-style:none;	
+}
+div.third{
+	font-weight:500;	
+}
+div.third li{
+	list-style-image:url(../img/kc_raju/asterisks.png);
+}
+#kc_main_content .section img{
+	width:35%;
+}
+#kc_main_content .doctor_section img{
+	width:35%;
+}
+#kc_main_content .section .section_text{
+	display:inline-block;	
+}
+#kc_main_content .doctor_section img.left_image{
+	margin-left:0;	
+}
+#kc_main_content .doctor_section img.right_image{
+	margin-right:0;	
+}
+#kc_main_content .doctor_section .section_text{
+	width:62%;
+}
+ol.abc{
+	list-style-type:lower-alpha;	
+}
+#affordable_section{
+	font-weight:500;	
+}
+
+/* Contact */
+#contact_content_text{
+	width:50%;	
+	display:inline-block;
+}
+textarea#comment{
+	height:100px;	
+}
+#column_right{
+	width:35%;
+	display:inline-block;
+	margin-bottom:5em;
+	position:relative;
+	top:4.5em;
+	left:4em;
+}
+p#contact_spacing{
+	line-height:30px;	
+}
+form label{
+	display:block;	
+}
+form input, form textarea{
+	width:100%;	
+	margin-bottom:1em;
+	border:none;
+}
+form input[type=submit]{
+	width:6em;	
+}
+#column_right iframe{
+	/*height:25em;	*/
+}
+#contact_content .horiz_strip_content{
+	background-position:100% 109%;
+}
+div.msg{
+	text-align:center;
+	font-size:1.5em;
+	text-shadow:1px 1px white;
+	text-decoration:underline;	
+}
+
+/* KC Raju Section */
+.section_no_margin{
+	margin-bottom:0;	
+}
+
+/* overrriding footer image*/
+#footer .horiz_strip_content{
+	padding:1em;
+	background-image:url(../img/white_flowers.png);
+	background-repeat:no-repeat;
+	background-position:0% 100%;
+	padding-bottom:4em;	
+}
+
+/* dropdown navigation */
+
+#nav ul.submenu{
+	position:absolute;
+	background-color:#4a4848;
+	top:1.8em;
+	display:none;
+	padding:.2em;
+	
+	/*rounded borders*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+ul.submenu a{
+	text-decoration:none;	
+}
+#nav .horiz_strip_content ul.submenu li{
+	color:white;
+	display:block;	
+	text-align:left;
+	font-size:.9em;
+	padding:0em;
+	margin-left:0;
+	margin-top:.4em;
+}
+#nav .horiz_strip_content ul.submenu a:hover li{
+	color:	#11a9d4;
+	text-decoration:underline;	
+}
+#nav .horiz_strip_content #about_menu{
+	left:20em;
+}
+#nav .horiz_strip_content #fertility_menu{
+	left:28em;
+}
+#nav .horiz_strip_content #other_menu{
+	left:38em;
+}
+#nav .horiz_strip_content #contact_menu{
+	left:45em;
+}
+#nav .horiz_strip_content #hospital_menu{
+	left:52em;
+}
+#nav_ul{
+	position:relative;	
+}
+div.nav_item{
+	display:inline-block;	
+}
+
+/* Anything Slider */
+#slider { width: 700px; height: 390px; }
+h3.no_padding_top{
+	padding-top:0;
+}
+div.full_width_section_text p, div.full_width_section_text ul{
+	padding:1em;	
+}
+div.full_width_section_text ul{
+	padding-left:2em;	
+}
+/* negative margins in 'about', 'contact', and 'kc raju' */
+.section.negative_margin{
+	margin-bottom:0em;	
+}
